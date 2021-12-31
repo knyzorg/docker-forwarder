@@ -1,7 +1,6 @@
 # web service1 config.
 server {
-  listen 80;
-  server_name ${PORT};
+  listen ${PORT};
 
   location / {
     proxy_set_header Host $host;
