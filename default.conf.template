@@ -11,6 +11,6 @@ server {
     proxy_request_buffering off;
     proxy_http_version 1.1;
     proxy_intercept_errors on;
-    proxy_pass http://host.docker.internal:3773;
+    proxy_pass http://172.17.0.1:3773;
   }
 }
